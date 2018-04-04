@@ -1,5 +1,6 @@
 package com.nick;
 
+import java.lang.reflect.Array;
 import java.math.BigInteger;
 import java.util.*;
 
@@ -15,25 +16,152 @@ public class Solution {
     * */
     public static void main(String[] args) {
         Solution solution = new Solution();
+        int[] test = {2,7,13,19};
+        out.println(solution.nthSuperUglyNumber(7, test));
         //int[] test = {1, 2, 3, 0, 2};
         //solution.maxProfit(test);
-        int[][] test = {
-                {1, 0},
-                {1, 2},
-                {1, 3},
-        };
-        int[][] test1 = {
-                {0, 3},
-                {1, 3},
-                {2, 3},
-                {4, 3},
-                {5, 4},
-        };
-        out.println(solution.findMinHeightTrees(4, test));
-        out.println(solution.findMinHeightTrees(6, test1));
+        //int[][] test = {
+        //        {1, 0},
+        //        {1, 2},
+        //        {1, 3},
+        //};
+        //int[][] test1 = {
+        //        {0, 3},
+        //        {1, 3},
+        //        {2, 3},
+        //        {4, 3},
+        //        {5, 4},
+        //};
+        //out.println(solution.findMinHeightTrees(4, test));
+        //out.println(solution.findMinHeightTrees(6, test1));
     }
+
     /*
-    * Leetcode 310. MinimumHeightTrees
+    * Leetcode 313. Super Ugly Number
+    * */
+    public int maxProduct(String[] words) {
+        if (words == null || words.length == 0) {
+            return 0;
+        }
+        int len = words.length;
+        int[] value = new int[len];
+
+        // hash
+        for (int i = 0; i < len; i ++) {
+            String tmp = words[i];
+            value[i] = 0;
+            for (int j = 0; j < tmp.length(); j ++) {
+                value[i] |= 1 << (tmp.charAt(j) - 'a');
+            }
+        }
+
+        // compare and calculate
+        int maxProduct = 0;
+        for (int i = 0; i < len; i ++) {
+            for (int j = i + 1; j < len; j ++) {
+                if ((value[i] & value[j]) == 0 && (words[i].length() * words[j].length() > maxProduct)) {
+                    maxProduct = words[i].length() * words[j].length();
+                }
+            }
+        }
+
+        return maxProduct;
+    }
+
+    /*
+    * Leetcode 313. Super Ugly Number
+    * */
+    public int nthSuperUglyNumber(int n, int[] primes) {
+        class Num implements Comparable<Num> {
+            int val;
+            int idx;
+            int p;
+
+            public Num(int val, int idx, int p) {
+                this.val = val;
+                this.idx = idx;
+                this.p = p;
+            }
+
+            @Override
+            public int compareTo(Num o) {
+                return this.val - o.val;
+            }
+        }
+        int[] ugly = new int[n];
+        PriorityQueue<Num> heap = new PriorityQueue<Num>();
+        for (int i = 0; i < primes.length; i ++) {
+            heap.add(new Num(primes[i], 1, primes[i]));
+        }
+        ugly[0] = 1;
+
+        for (int i = 1; i < n; i ++) {
+            ugly[i] = heap.peek().val;
+            while (heap.peek().val == ugly[i]) {
+                Num next = heap.poll();
+                heap.add(new Num(next.p * ugly[next.idx], next.idx + 1, next.p));
+            }
+        }
+
+        return ugly[n - 1];
+
+        /*
+        * 方法二
+        * val 数组记录了新的一轮循环每个位置所达到的比当前 ugly 大的最小值
+        * 通过每次选举最小的数作为 ugly 的下一个数，同时在循环中把与这个数相同位置的 val 进行更新
+        * 实现对ugly的查找动作
+        * */
+        /*
+        int[] ugly = new int[n];
+        int[] idx = new int[primes.length];
+        int[] val = new int[primes.length];
+        Arrays.fill(val, 1);
+
+        int next = 1;
+        for (int i = 0; i < n; i ++) {
+            ugly[i] = next;
+
+            next = Integer.MAX_VALUE;
+            for (int j = 0; j < primes.length; j ++) {
+                if (val[j] == ugly[i]) {
+                    val[j] = ugly[idx[j]] * primes[j];
+                    idx[j] ++;
+                }
+                next = Math.min(next, val[j]);
+            }
+        }
+
+        return ugly[n - 1];
+        */
+
+        /*
+        * 方法一
+        * idx[i] 表示的是 primes[i] 可以乘的ugly的位置，使这个值可以参与下一轮ugly数的选举
+        * 因此我们每选出一个ugly数，就要对所有的idx进行检查，把乘积后小于等于当前ugly数的idx加到恰好大于当前ugly数以进行下一轮选举
+        * */
+        /*
+        int[] ugly = new int[n];
+        int[] idx = new int[primes.length];
+
+        ugly[0] = 1;
+        for (int i = 1; i < n; i++) {
+            //find next
+            ugly[i] = Integer.MAX_VALUE;
+            for (int j = 0; j < primes.length; j++)
+                ugly[i] = Math.min(ugly[i], primes[j] * ugly[idx[j]]);
+
+            //slip duplicate
+            for (int j = 0; j < primes.length; j++) {
+                while (primes[j] * ugly[idx[j]] <= ugly[i]) idx[j]++;
+            }
+        }
+
+        return ugly[n - 1];
+        */
+    }
+
+    /*
+    * Leetcode 310. Minimum Height Trees
     * */
     public List<Integer> findMinHeightTrees(int n, int[][] edges) {
         if (n == 1) {

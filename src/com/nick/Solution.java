@@ -16,8 +16,9 @@ public class Solution {
     * */
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] test = {2,7,13,19};
-        out.println(solution.nthSuperUglyNumber(7, test));
+        out.println(solution.bulbSwitch(3));
+        //int[] test = {2,7,13,19};
+        //out.println(solution.nthSuperUglyNumber(7, test));
         //int[] test = {1, 2, 3, 0, 2};
         //solution.maxProfit(test);
         //int[][] test = {
@@ -34,6 +35,44 @@ public class Solution {
         //};
         //out.println(solution.findMinHeightTrees(4, test));
         //out.println(solution.findMinHeightTrees(6, test1));
+    }
+
+    /*
+    * Leetcode 319. Bulb Switcher
+    * */
+    public int bulbSwitch(int n) {
+        return (int) Math.sqrt(n);
+        /*
+        if (n == 0) {
+            return 0;
+        } else if (n == 1) {
+            return n;
+        }
+
+        BitSet bulbs = new BitSet(n);
+        // init
+        for (int i = 0; i < n; i ++) {
+            bulbs.set(i, true);
+        }
+        // do loop
+        for (int i = 2; i <= n; i ++) {
+            int p = i - 1;
+            while (p < n) {
+                boolean v = bulbs.get(p);
+                bulbs.set(p, !v);
+                p += i;
+            }
+        }
+
+        int nums = 0;
+        for (int i = 0; i < n; i ++) {
+            if (bulbs.get(i)) {
+                nums ++;
+            }
+        }
+
+        return nums;
+        */
     }
 
     /*

@@ -16,7 +16,11 @@ public class Solution {
     * */
     public static void main(String[] args) {
         Solution solution = new Solution();
-        out.println(solution.bulbSwitch(3));
+        int[] nums = {1,5,1,1,6,4};
+        solution.wiggleSort(nums);
+        //int[] coins = {1};
+        //out.println(solution.coinChange(coins, 1));
+        //out.println(solution.bulbSwitch(3));
         //int[] test = {2,7,13,19};
         //out.println(solution.nthSuperUglyNumber(7, test));
         //int[] test = {1, 2, 3, 0, 2};
@@ -35,6 +39,65 @@ public class Solution {
         //};
         //out.println(solution.findMinHeightTrees(4, test));
         //out.println(solution.findMinHeightTrees(6, test1));
+    }
+
+    /*
+    * Leetcode 324. Wiggle Sort II
+    * */
+    public void wiggleSort(int[] nums) {
+        Arrays.sort(nums);
+        int[] t = new int[nums.length];
+        int left = 0, right = nums.length - 1, p = 0;
+        while (left < nums.length && right >= 0 && left <= right) {
+            t[p++] = nums[left++];
+            t[p++] = nums[right--];
+            t[p++] = nums[left++];
+        }
+        nums = t;
+    }
+
+    /*
+    * Leetcode 322. Coin Change
+    * */
+    public int coinChange(int[] coins, int amount) {
+        int[] dp = new int[amount + 1];
+        for (int i = 1; i <= amount; i ++) {
+            dp[i] = Integer.MAX_VALUE;
+        }
+        Arrays.sort(coins);
+
+        for (int i = 1; i <= amount; i ++) {
+            for (int j = 0; j < coins.length; j ++) {
+                if (coins[j] <= i && i - coins[j] >= 0 && dp[i-coins[j]] != Integer.MAX_VALUE) {
+                    dp[i] = Math.min(dp[i-coins[j]] + 1, dp[i]);
+                }
+            }
+        }
+        /*
+        for (int i = 1; i <= amount; i ++) {
+            for (int j = 0; j < i; j ++) {
+                if (dp[j] == Integer.MAX_VALUE) {
+                    continue;
+                }
+                for (int k = 0; k < coins.length; k ++) {
+                    if (j + coins[k] > i) {
+                        break;
+                    } else if (j + coins[k] == i) {
+                        if (dp[j] + 1 < dp[i]) {
+                            dp[i] = dp[j] + 1;
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+        */
+
+        if (dp[amount] == Integer.MAX_VALUE) {
+            return -1;
+        } else {
+            return dp[amount];
+        }
     }
 
     /*

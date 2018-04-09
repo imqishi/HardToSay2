@@ -16,14 +16,18 @@ public class Solution {
     * */
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] nums = {5,3,1,2,6,7,8,5,5};
+        //String preorder = "9,#,3,#,#";
+        //String preorder = "9,3,4,#,#,1,#,#,2,#,6,#,#";
+        //out.println(solution.isValidSerialization(preorder));
+        //int[] nums = {5,3,1,2,6,7,8,5,5};
+        //solution.threeWayPartition(nums, 5);
         //int[] nums = {1,3,2,2,3,1};
         //int[] nums = {2,1};
         //int[] nums = {1,1,1,2,2,2};
         //int[] nums = {1,5,1,1,6,4};
         //int[] nums = {1,1,1,6,4};
-        solution.wiggleSort(nums);
-        out.println(Arrays.toString(nums));
+        //solution.wiggleSort(nums);
+        //out.println(Arrays.toString(nums));
         //int[] coins = {1};
         //out.println(solution.coinChange(coins, 1));
         //out.println(solution.bulbSwitch(3));
@@ -45,6 +49,82 @@ public class Solution {
         //};
         //out.println(solution.findMinHeightTrees(4, test));
         //out.println(solution.findMinHeightTrees(6, test1));
+    }
+
+    /*
+    * Leetcode 332. Reconstruct Itinerary
+    * */
+    public List<String> findItinerary(String[][] tickets) {
+
+    }
+
+    /*
+    * Leetcode 331. Verify Preorder Serialization of a Binary Tree
+    * */
+    public boolean isValidSerialization(String preorder) {
+        if (preorder == null) {
+            return false;
+        }
+        /*
+        * Tree Perspective
+        * */
+        String[] nodes = preorder.split(",");
+        Stack<String> stack = new Stack<>();
+        for (String node : nodes) {
+            while (node.equals("#") && !stack.isEmpty() && stack.peek().equals("#")) {
+                stack.pop();
+                if (stack.isEmpty()) {
+                    return false;
+                }
+                stack.pop();
+            }
+            stack.push(node);
+        }
+        return stack.size() == 1 && stack.peek().equals("#");
+
+        /*
+        * Degree Perspective
+        * Every # node supply 1 indegree and 0 outdegree
+        * Every not # node supply 1 indegree and 2 outdegree
+        * Use diff to record outdegree - indegree
+        * If we scan from left to right and diff never < 0
+        * and at last diff = 0
+        * It means OK.
+        String[] nodes = preorder.split(",");
+        int diff = 1;
+        for (String node : nodes) {
+            if (--diff < 0) {
+                return false;
+            }
+            if (! node.equals("#")) {
+                diff += 2;
+            }
+        }
+        return diff == 0;
+        */
+    }
+
+    /*
+    * Three Way Partition
+    * Dutch National Flag Problem
+    * Related: Leetcode 75
+    * */
+    public void threeWayPartition(int[] a, int mid) {
+        int i = 0, j = 0, n = a.length - 1;
+
+        while (j <= n) {
+            if (a[j] < mid) {
+                swap(a, i, j);
+                i ++;
+                j ++;
+            } else if (a[j] > mid) {
+                swap(a, j, n);
+                n --;
+            } else {
+                j ++;
+            }
+        }
+        out.println(Arrays.toString(a));
     }
 
     /*

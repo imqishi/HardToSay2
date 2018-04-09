@@ -16,8 +16,14 @@ public class Solution {
     * */
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] nums = {1,5,1,1,6,4};
+        int[] nums = {5,3,1,2,6,7,8,5,5};
+        //int[] nums = {1,3,2,2,3,1};
+        //int[] nums = {2,1};
+        //int[] nums = {1,1,1,2,2,2};
+        //int[] nums = {1,5,1,1,6,4};
+        //int[] nums = {1,1,1,6,4};
         solution.wiggleSort(nums);
+        out.println(Arrays.toString(nums));
         //int[] coins = {1};
         //out.println(solution.coinChange(coins, 1));
         //out.println(solution.bulbSwitch(3));
@@ -45,15 +51,62 @@ public class Solution {
     * Leetcode 324. Wiggle Sort II
     * */
     public void wiggleSort(int[] nums) {
-        Arrays.sort(nums);
-        int[] t = new int[nums.length];
-        int left = 0, right = nums.length - 1, p = 0;
-        while (left < nums.length && right >= 0 && left <= right) {
-            t[p++] = nums[left++];
-            t[p++] = nums[right--];
-            t[p++] = nums[left++];
+        /*
+        * Assume that quickSelect use O(n) time
+        * Actually we should use BFPRT algorithm
+        * */
+        int n = nums.length;
+        int median = nums[n / 2];
+        if (n > 1) {
+            median = quickSelect(nums, 0, n - 1, (n + 1) / 2);
+            median = nums[median];
         }
-        nums = t;
+        int left = 0, i = 0, right = n - 1;
+
+        while (i <= right) {
+            if (nums[newIndex(i, n)] > median) {
+                swap(nums, newIndex(left++, n), newIndex(i++, n));
+            } else if (nums[newIndex(i, n)] < median) {
+                swap(nums, newIndex(right--, n), newIndex(i, n));
+            } else {
+                i++;
+            }
+        }
+    }
+
+    public int newIndex(int index, int n) {
+        return (1 + 2 * index) % (n | 1);
+    }
+
+    public int quickSelect(int[] nums, int lo, int hi, int k) {
+        int i = lo, j = hi, pivot = nums[hi];
+        while (true) {
+            while (i < j && nums[i] < pivot) {
+                i ++;
+            }
+            while (i < j && nums[j] >= pivot) {
+                j --;
+            }
+            if (i >= j) {
+                break;
+            }
+            swap(nums, i, j);
+        }
+        swap(nums, i, hi);
+        int m = i - lo + 1;
+        if (m == k) {
+            return i;
+        } else if (m > k) {
+            return quickSelect(nums, lo, i - 1, k);
+        } else {
+            return quickSelect(nums, i + 1, hi, k - m);
+        }
+    }
+
+    public void swap(int[] nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
     }
 
     /*

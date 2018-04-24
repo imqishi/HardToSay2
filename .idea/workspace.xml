@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed39ad8-65bb-43cc-9963-da591c67c89b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nick/BSTIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nick/CodeC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nick/Interval.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nick/LRUCache.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nick/ListNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nick/TreeNode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nick/Solution.java" afterPath="$PROJECT_DIR$/src/com/nick/Solution.java" />
     </list>
@@ -31,31 +35,123 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nick/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1408">
-              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+            <state relative-caret-position="475">
+              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
+                <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
+                <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+                <element signature="method#rob#0;class#Solution#0" expanded="false" />
+                <element signature="method#subRob#0;class#Solution#0" expanded="false" />
+                <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
+                <element signature="method#subPermuteUnique#0;class#Solution#0" expanded="false" />
+                <element signature="method#flatten#0;class#Solution#0" expanded="false" />
+                <element signature="method#flattenByLoop#0;class#Solution#0" expanded="false" />
+                <element signature="method#lengthOfLIS#0;class#Solution#0" expanded="false" />
+                <element signature="method#lowerBound#0;class#Solution#0" expanded="false" />
+                <element signature="method#canJump#0;class#Solution#0" expanded="false" />
+                <element signature="method#canMeasureWater#0;class#Solution#0" expanded="false" />
+                <element signature="method#GCD#0;class#Solution#0" expanded="false" />
+                <element signature="method#merge#0;class#Solution#0" expanded="false" />
+                <element signature="method#maxPathSum#0;class#Solution#0" expanded="false" />
+                <element signature="method#subMaxPathSum#0;class#Solution#0" expanded="false" />
+                <element signature="method#hasPathSum#0;class#Solution#0" expanded="false" />
+                <element signature="method#isPalindrome#0;class#Solution#0" expanded="false" />
+                <element signature="method#getTrimedString#0;class#Solution#0" expanded="false" />
+                <element signature="method#findPeakElement#0;class#Solution#0" expanded="false" />
+                <element signature="method#compareVersion#0;class#Solution#0" expanded="false" />
+                <element signature="method#trimRightZeros#0;class#Solution#0" expanded="false" />
+                <element signature="method#numDecodings#0;class#Solution#0" expanded="false" />
+                <element signature="method#permute#0;class#Solution#0" expanded="false" />
+                <element signature="method#subPermute#0;class#Solution#0" expanded="false" />
+                <element signature="method#exist#0;class#Solution#0" expanded="false" />
+                <element signature="method#subExist#0;class#Solution#0" expanded="false" />
+                <element signature="method#addDigits#0;class#Solution#0" expanded="false" />
+                <element signature="method#reverseKGroup#0;class#Solution#0" expanded="false" />
+                <element signature="method#hasKGroup#0;class#Solution#0" expanded="false" />
+                <element signature="method#longestPalindrome#0;class#Solution#0" expanded="false" />
+                <element signature="method#threeSum#0;class#Solution#0" expanded="false" />
+                <element signature="method#countPrimes#0;class#Solution#0" expanded="false" />
+                <element signature="method#isPrime#0;class#Solution#0" expanded="false" />
+                <element signature="method#buildTree#0;class#Solution#0" expanded="false" />
+                <element signature="method#subBuildTree#0;class#Solution#0" expanded="false" />
+                <element signature="method#findPos#0;class#Solution#0" expanded="false" />
+                <element signature="method#firstUniqChar#0;class#Solution#0" expanded="false" />
+                <element signature="method#simplifyPath#0;class#Solution#0" expanded="false" />
+                <element signature="method#removeDuplicates#0;class#Solution#0" expanded="false" />
+                <element signature="method#findKthLargest#0;class#Solution#0" expanded="false" />
+                <element signature="method#bookPartition#0;class#Solution#0" expanded="false" />
+                <element signature="method#lomutoPartition#0;class#Solution#0" expanded="false" />
+                <element signature="method#hoarePartition#0;class#Solution#0" expanded="false" />
+                <element signature="method#getIntersectionNode#0;class#Solution#0" expanded="false" />
+                <element signature="method#hammingWeight#0;class#Solution#0" expanded="false" />
+                <element signature="method#swapPairs#0;class#Solution#0" expanded="false" />
+                <element signature="method#search#0;class#Solution#0" expanded="false" />
+                <element signature="method#romanToInt#0;class#Solution#0" expanded="false" />
+                <element signature="method#isValidBST#0;class#Solution#0" expanded="false" />
+                <element signature="method#isValidBSTRecursive#0;class#Solution#0" expanded="false" />
+                <element signature="method#isValid#0;class#Solution#0" expanded="false" />
+                <element signature="method#calculateMinimumHP#0;class#Solution#0" expanded="false" />
+                <element signature="method#myAtoi#0;class#Solution#0" expanded="false" />
+                <element signature="method#checkOutofBound#0;class#Solution#0" expanded="false" />
+                <element signature="method#trimData#0;class#Solution#0" expanded="false" />
+                <element signature="method#addTwoNumbers2#0;class#Solution#0" expanded="false" />
+                <element signature="method#convertToTitle#0;class#Solution#0" expanded="false" />
+                <element signature="method#addTwoNumbers#0;class#Solution#0" expanded="false" />
+                <element signature="method#subAddOneNumber#0;class#Solution#0" expanded="false" />
+                <element signature="method#subAddTwoNumbers#0;class#Solution#0" expanded="false" />
+                <element signature="method#deleteNode#0;class#Solution#0" expanded="false" />
+                <element signature="method#hasCycle#0;class#Solution#0" expanded="false" />
+                <element signature="method#maxProfit121#0;class#Solution#0" expanded="false" />
+                <element signature="method#setZeroes#0;class#Solution#0" expanded="false" />
+                <element signature="method#productExceptSelf#0;class#Solution#0" expanded="false" />
+                <element signature="method#zigzagLevelOrder#0;class#Solution#0" expanded="false" />
+                <element signature="method#sortColors#0;class#Solution#0" expanded="false" />
+                <element signature="class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+                <element signature="method#TreeLinkNode#0;class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+                <element signature="method#connect#0;class#Solution#0" expanded="false" />
+                <element signature="method#reverseWords#0;class#Solution#0" expanded="false" />
+                <element signature="method#subReverseWords#0;class#Solution#0" expanded="false" />
+                <element signature="method#maxSubArray#0;class#Solution#0" expanded="false" />
+                <element signature="method#missingNumber#0;class#Solution#0" expanded="false" />
+                <element signature="class#UnionFindSet#0;class#Solution#0" expanded="false" />
+                <element signature="method#UnionFindSet#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+                <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+                <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+                <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+                <element signature="e#56988#57045#0" expanded="false" />
+                <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
+                <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
+                <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
+                <element signature="method#lowestCommonAncestor#0;class#Solution#0" expanded="false" />
+                <element signature="method#spiralOrder#0;class#Solution#0" expanded="false" />
+                <element signature="method#countBattleships#0;class#Solution#0" expanded="false" />
+                <element signature="method#alibabaTest#0;class#Solution#0" expanded="false" />
+                <element signature="class#RandomListNode#0;class#Solution#0" expanded="false" />
+                <element signature="method#RandomListNode#0;class#RandomListNode#0;class#Solution#0" expanded="false" />
+                <element signature="method#copyRandomList#0;class#Solution#0" expanded="false" />
+                <element signature="method#findItinerary#0;class#Solution#0" expanded="false" />
+                <element signature="method#visit#0;class#Solution#0" expanded="false" />
+                <element signature="method#isValidSerialization#0;class#Solution#0" expanded="false" />
+                <element signature="method#threeWayPartition#0;class#Solution#0" expanded="false" />
+                <element signature="method#wiggleSort#0;class#Solution#0" expanded="false" />
+                <element signature="method#swap#0;class#Solution#0" expanded="false" />
+                <element signature="method#coinChange#0;class#Solution#0" expanded="false" />
+                <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
+                <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
+                <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
+                <element signature="class#72831:73217" expanded="false" />
+                <element signature="method#Num#0;class#72831:73217" expanded="false" />
+                <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
+                <element signature="e#75838#75852#0" expanded="false" />
+                <element signature="e#76640#76667#0" expanded="false" />
+                <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
+                <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
+                <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
+                <element signature="method#isAdditiveNumber#0;class#Solution#0" expanded="false" />
+                <element signature="method#subIsAdditiveNumber#0;class#Solution#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BitSet.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/BitSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12848">
-              <caret line="620" column="19" selection-start-line="620" selection-start-column="19" selection-end-line="620" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumArray.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nick/NumArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2068">
-              <caret line="96" column="1" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -81,6 +177,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/nick/NumArray.java" />
+        <option value="$PROJECT_DIR$/src/com/nick/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/com/nick/CodeC.java" />
+        <option value="$PROJECT_DIR$/src/com/nick/Codec.java" />
+        <option value="$PROJECT_DIR$/leetcode-java.iml" />
+        <option value="$PROJECT_DIR$/src/com/nick/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/com/nick/LRUCache.java" />
+        <option value="$PROJECT_DIR$/src/com/nick/BSTIterator.java" />
+        <option value="$PROJECT_DIR$/src/com/nick/Interval.java" />
         <option value="$PROJECT_DIR$/src/com/nick/Solution.java" />
       </list>
     </option>
@@ -92,9 +196,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="x" value="-267" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -132,6 +237,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetcode-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetcode-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetcode-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leetcode-java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -159,7 +292,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="946" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/springDemo" />
   </component>
   <component name="RunManager" selected="Application.Solution">
     <configuration default="false" name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -625,40 +758,42 @@
       <workItem from="1522820800375" duration="12692000" />
       <workItem from="1522849724652" duration="2217000" />
       <workItem from="1523027874654" duration="598000" />
+      <workItem from="1523281227727" duration="140814000" />
+      <workItem from="1524565077997" duration="9971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16245000" />
+    <option name="totallyTimeSpent" value="167030000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="false" />
+    <frame x="-267" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281704" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23798358" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32623428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11597222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1515625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35914811" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31770223" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -675,7 +810,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/nick/Solution.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="100" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -690,6 +833,398 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
+            <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#rob#0;class#Solution#0" expanded="false" />
+            <element signature="method#subRob#0;class#Solution#0" expanded="false" />
+            <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
+            <element signature="method#subPermuteUnique#0;class#Solution#0" expanded="false" />
+            <element signature="method#flatten#0;class#Solution#0" expanded="false" />
+            <element signature="method#flattenByLoop#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLIS#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowerBound#0;class#Solution#0" expanded="false" />
+            <element signature="method#canJump#0;class#Solution#0" expanded="false" />
+            <element signature="method#canMeasureWater#0;class#Solution#0" expanded="false" />
+            <element signature="method#GCD#0;class#Solution#0" expanded="false" />
+            <element signature="method#merge#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#subMaxPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPalindrome#0;class#Solution#0" expanded="false" />
+            <element signature="method#getTrimedString#0;class#Solution#0" expanded="false" />
+            <element signature="method#findPeakElement#0;class#Solution#0" expanded="false" />
+            <element signature="method#compareVersion#0;class#Solution#0" expanded="false" />
+            <element signature="method#trimRightZeros#0;class#Solution#0" expanded="false" />
+            <element signature="method#numDecodings#0;class#Solution#0" expanded="false" />
+            <element signature="method#permute#0;class#Solution#0" expanded="false" />
+            <element signature="method#subPermute#0;class#Solution#0" expanded="false" />
+            <element signature="method#exist#0;class#Solution#0" expanded="false" />
+            <element signature="method#subExist#0;class#Solution#0" expanded="false" />
+            <element signature="method#addDigits#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseKGroup#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasKGroup#0;class#Solution#0" expanded="false" />
+            <element signature="method#longestPalindrome#0;class#Solution#0" expanded="false" />
+            <element signature="method#threeSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#countPrimes#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPrime#0;class#Solution#0" expanded="false" />
+            <element signature="method#buildTree#0;class#Solution#0" expanded="false" />
+            <element signature="method#subBuildTree#0;class#Solution#0" expanded="false" />
+            <element signature="method#findPos#0;class#Solution#0" expanded="false" />
+            <element signature="method#firstUniqChar#0;class#Solution#0" expanded="false" />
+            <element signature="method#simplifyPath#0;class#Solution#0" expanded="false" />
+            <element signature="method#removeDuplicates#0;class#Solution#0" expanded="false" />
+            <element signature="method#findKthLargest#0;class#Solution#0" expanded="false" />
+            <element signature="method#bookPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#lomutoPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#hoarePartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#getIntersectionNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#hammingWeight#0;class#Solution#0" expanded="false" />
+            <element signature="method#swapPairs#0;class#Solution#0" expanded="false" />
+            <element signature="method#search#0;class#Solution#0" expanded="false" />
+            <element signature="method#romanToInt#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidBST#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidBSTRecursive#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValid#0;class#Solution#0" expanded="false" />
+            <element signature="method#calculateMinimumHP#0;class#Solution#0" expanded="false" />
+            <element signature="method#myAtoi#0;class#Solution#0" expanded="false" />
+            <element signature="method#checkOutofBound#0;class#Solution#0" expanded="false" />
+            <element signature="method#trimData#0;class#Solution#0" expanded="false" />
+            <element signature="method#addTwoNumbers2#0;class#Solution#0" expanded="false" />
+            <element signature="method#convertToTitle#0;class#Solution#0" expanded="false" />
+            <element signature="method#addTwoNumbers#0;class#Solution#0" expanded="false" />
+            <element signature="method#subAddOneNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#subAddTwoNumbers#0;class#Solution#0" expanded="false" />
+            <element signature="method#deleteNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasCycle#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProfit121#0;class#Solution#0" expanded="false" />
+            <element signature="method#setZeroes#0;class#Solution#0" expanded="false" />
+            <element signature="method#productExceptSelf#0;class#Solution#0" expanded="false" />
+            <element signature="method#zigzagLevelOrder#0;class#Solution#0" expanded="false" />
+            <element signature="method#sortColors#0;class#Solution#0" expanded="false" />
+            <element signature="class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#TreeLinkNode#0;class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#connect#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseWords#0;class#Solution#0" expanded="false" />
+            <element signature="method#subReverseWords#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxSubArray#0;class#Solution#0" expanded="false" />
+            <element signature="method#missingNumber#0;class#Solution#0" expanded="false" />
+            <element signature="class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#UnionFindSet#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="e#56988#57045#0" expanded="false" />
+            <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
+            <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowestCommonAncestor#0;class#Solution#0" expanded="false" />
+            <element signature="method#spiralOrder#0;class#Solution#0" expanded="false" />
+            <element signature="method#countBattleships#0;class#Solution#0" expanded="false" />
+            <element signature="method#alibabaTest#0;class#Solution#0" expanded="false" />
+            <element signature="class#RandomListNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#RandomListNode#0;class#RandomListNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#copyRandomList#0;class#Solution#0" expanded="false" />
+            <element signature="method#findItinerary#0;class#Solution#0" expanded="false" />
+            <element signature="method#visit#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidSerialization#0;class#Solution#0" expanded="false" />
+            <element signature="method#threeWayPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#wiggleSort#0;class#Solution#0" expanded="false" />
+            <element signature="method#swap#0;class#Solution#0" expanded="false" />
+            <element signature="method#coinChange#0;class#Solution#0" expanded="false" />
+            <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
+            <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
+            <element signature="class#72831:73217" expanded="false" />
+            <element signature="method#Num#0;class#72831:73217" expanded="false" />
+            <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
+            <element signature="e#75838#75852#0" expanded="false" />
+            <element signature="e#76640#76667#0" expanded="false" />
+            <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
+            <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
+            <element signature="method#isAdditiveNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#subIsAdditiveNumber#0;class#Solution#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/Interval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/LRUCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
+            <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#rob#0;class#Solution#0" expanded="false" />
+            <element signature="method#subRob#0;class#Solution#0" expanded="false" />
+            <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
+            <element signature="method#subPermuteUnique#0;class#Solution#0" expanded="false" />
+            <element signature="method#flatten#0;class#Solution#0" expanded="false" />
+            <element signature="method#flattenByLoop#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLIS#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowerBound#0;class#Solution#0" expanded="false" />
+            <element signature="method#canJump#0;class#Solution#0" expanded="false" />
+            <element signature="method#canMeasureWater#0;class#Solution#0" expanded="false" />
+            <element signature="method#GCD#0;class#Solution#0" expanded="false" />
+            <element signature="method#merge#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#subMaxPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPalindrome#0;class#Solution#0" expanded="false" />
+            <element signature="method#getTrimedString#0;class#Solution#0" expanded="false" />
+            <element signature="method#findPeakElement#0;class#Solution#0" expanded="false" />
+            <element signature="method#compareVersion#0;class#Solution#0" expanded="false" />
+            <element signature="method#trimRightZeros#0;class#Solution#0" expanded="false" />
+            <element signature="method#numDecodings#0;class#Solution#0" expanded="false" />
+            <element signature="method#permute#0;class#Solution#0" expanded="false" />
+            <element signature="method#subPermute#0;class#Solution#0" expanded="false" />
+            <element signature="method#exist#0;class#Solution#0" expanded="false" />
+            <element signature="method#subExist#0;class#Solution#0" expanded="false" />
+            <element signature="method#addDigits#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseKGroup#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasKGroup#0;class#Solution#0" expanded="false" />
+            <element signature="method#longestPalindrome#0;class#Solution#0" expanded="false" />
+            <element signature="method#threeSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#countPrimes#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPrime#0;class#Solution#0" expanded="false" />
+            <element signature="method#buildTree#0;class#Solution#0" expanded="false" />
+            <element signature="method#subBuildTree#0;class#Solution#0" expanded="false" />
+            <element signature="method#findPos#0;class#Solution#0" expanded="false" />
+            <element signature="method#firstUniqChar#0;class#Solution#0" expanded="false" />
+            <element signature="method#simplifyPath#0;class#Solution#0" expanded="false" />
+            <element signature="method#removeDuplicates#0;class#Solution#0" expanded="false" />
+            <element signature="method#findKthLargest#0;class#Solution#0" expanded="false" />
+            <element signature="method#bookPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#lomutoPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#hoarePartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#getIntersectionNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#hammingWeight#0;class#Solution#0" expanded="false" />
+            <element signature="method#swapPairs#0;class#Solution#0" expanded="false" />
+            <element signature="method#search#0;class#Solution#0" expanded="false" />
+            <element signature="method#romanToInt#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidBST#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidBSTRecursive#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValid#0;class#Solution#0" expanded="false" />
+            <element signature="method#calculateMinimumHP#0;class#Solution#0" expanded="false" />
+            <element signature="method#myAtoi#0;class#Solution#0" expanded="false" />
+            <element signature="method#checkOutofBound#0;class#Solution#0" expanded="false" />
+            <element signature="method#trimData#0;class#Solution#0" expanded="false" />
+            <element signature="method#addTwoNumbers2#0;class#Solution#0" expanded="false" />
+            <element signature="method#convertToTitle#0;class#Solution#0" expanded="false" />
+            <element signature="method#addTwoNumbers#0;class#Solution#0" expanded="false" />
+            <element signature="method#subAddOneNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#subAddTwoNumbers#0;class#Solution#0" expanded="false" />
+            <element signature="method#deleteNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasCycle#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProfit121#0;class#Solution#0" expanded="false" />
+            <element signature="method#setZeroes#0;class#Solution#0" expanded="false" />
+            <element signature="method#productExceptSelf#0;class#Solution#0" expanded="false" />
+            <element signature="method#zigzagLevelOrder#0;class#Solution#0" expanded="false" />
+            <element signature="method#sortColors#0;class#Solution#0" expanded="false" />
+            <element signature="class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#TreeLinkNode#0;class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#connect#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseWords#0;class#Solution#0" expanded="false" />
+            <element signature="method#subReverseWords#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxSubArray#0;class#Solution#0" expanded="false" />
+            <element signature="method#missingNumber#0;class#Solution#0" expanded="false" />
+            <element signature="class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#UnionFindSet#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="e#56988#57045#0" expanded="false" />
+            <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
+            <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowestCommonAncestor#0;class#Solution#0" expanded="false" />
+            <element signature="method#spiralOrder#0;class#Solution#0" expanded="false" />
+            <element signature="method#countBattleships#0;class#Solution#0" expanded="false" />
+            <element signature="method#alibabaTest#0;class#Solution#0" expanded="false" />
+            <element signature="class#RandomListNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#RandomListNode#0;class#RandomListNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#copyRandomList#0;class#Solution#0" expanded="false" />
+            <element signature="method#findItinerary#0;class#Solution#0" expanded="false" />
+            <element signature="method#visit#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidSerialization#0;class#Solution#0" expanded="false" />
+            <element signature="method#threeWayPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#wiggleSort#0;class#Solution#0" expanded="false" />
+            <element signature="method#swap#0;class#Solution#0" expanded="false" />
+            <element signature="method#coinChange#0;class#Solution#0" expanded="false" />
+            <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
+            <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
+            <element signature="class#72831:73217" expanded="false" />
+            <element signature="method#Num#0;class#72831:73217" expanded="false" />
+            <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
+            <element signature="e#75838#75852#0" expanded="false" />
+            <element signature="e#76640#76667#0" expanded="false" />
+            <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
+            <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
+            <element signature="method#isAdditiveNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#subIsAdditiveNumber#0;class#Solution#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/BitSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12848">
+          <caret line="620" column="19" selection-start-line="620" selection-start-column="19" selection-end-line="620" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/NumArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2068">
+          <caret line="96" column="1" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
+          <folding>
+            <element signature="e#1297#1298#0" expanded="false" />
+            <element signature="e#1333#1334#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
+            <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#rob#0;class#Solution#0" expanded="false" />
+            <element signature="method#subRob#0;class#Solution#0" expanded="false" />
+            <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
+            <element signature="method#subPermuteUnique#0;class#Solution#0" expanded="false" />
+            <element signature="method#flatten#0;class#Solution#0" expanded="false" />
+            <element signature="method#flattenByLoop#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLIS#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowerBound#0;class#Solution#0" expanded="false" />
+            <element signature="method#canJump#0;class#Solution#0" expanded="false" />
+            <element signature="method#canMeasureWater#0;class#Solution#0" expanded="false" />
+            <element signature="method#GCD#0;class#Solution#0" expanded="false" />
+            <element signature="method#merge#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#subMaxPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPalindrome#0;class#Solution#0" expanded="false" />
+            <element signature="method#getTrimedString#0;class#Solution#0" expanded="false" />
+            <element signature="method#findPeakElement#0;class#Solution#0" expanded="false" />
+            <element signature="method#compareVersion#0;class#Solution#0" expanded="false" />
+            <element signature="method#trimRightZeros#0;class#Solution#0" expanded="false" />
+            <element signature="method#numDecodings#0;class#Solution#0" expanded="false" />
+            <element signature="method#permute#0;class#Solution#0" expanded="false" />
+            <element signature="method#subPermute#0;class#Solution#0" expanded="false" />
+            <element signature="method#exist#0;class#Solution#0" expanded="false" />
+            <element signature="method#subExist#0;class#Solution#0" expanded="false" />
+            <element signature="method#addDigits#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseKGroup#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasKGroup#0;class#Solution#0" expanded="false" />
+            <element signature="method#longestPalindrome#0;class#Solution#0" expanded="false" />
+            <element signature="method#threeSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#countPrimes#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPrime#0;class#Solution#0" expanded="false" />
+            <element signature="method#buildTree#0;class#Solution#0" expanded="false" />
+            <element signature="method#subBuildTree#0;class#Solution#0" expanded="false" />
+            <element signature="method#findPos#0;class#Solution#0" expanded="false" />
+            <element signature="method#firstUniqChar#0;class#Solution#0" expanded="false" />
+            <element signature="method#simplifyPath#0;class#Solution#0" expanded="false" />
+            <element signature="method#removeDuplicates#0;class#Solution#0" expanded="false" />
+            <element signature="method#findKthLargest#0;class#Solution#0" expanded="false" />
+            <element signature="method#bookPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#lomutoPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#hoarePartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#getIntersectionNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#hammingWeight#0;class#Solution#0" expanded="false" />
+            <element signature="method#swapPairs#0;class#Solution#0" expanded="false" />
+            <element signature="method#search#0;class#Solution#0" expanded="false" />
+            <element signature="method#romanToInt#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidBST#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidBSTRecursive#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValid#0;class#Solution#0" expanded="false" />
+            <element signature="method#calculateMinimumHP#0;class#Solution#0" expanded="false" />
+            <element signature="method#myAtoi#0;class#Solution#0" expanded="false" />
+            <element signature="method#checkOutofBound#0;class#Solution#0" expanded="false" />
+            <element signature="method#trimData#0;class#Solution#0" expanded="false" />
+            <element signature="method#addTwoNumbers2#0;class#Solution#0" expanded="false" />
+            <element signature="method#convertToTitle#0;class#Solution#0" expanded="false" />
+            <element signature="method#addTwoNumbers#0;class#Solution#0" expanded="false" />
+            <element signature="method#subAddOneNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#subAddTwoNumbers#0;class#Solution#0" expanded="false" />
+            <element signature="method#deleteNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasCycle#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProfit121#0;class#Solution#0" expanded="false" />
+            <element signature="method#setZeroes#0;class#Solution#0" expanded="false" />
+            <element signature="method#productExceptSelf#0;class#Solution#0" expanded="false" />
+            <element signature="method#zigzagLevelOrder#0;class#Solution#0" expanded="false" />
+            <element signature="method#sortColors#0;class#Solution#0" expanded="false" />
+            <element signature="class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#TreeLinkNode#0;class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#connect#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseWords#0;class#Solution#0" expanded="false" />
+            <element signature="method#subReverseWords#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxSubArray#0;class#Solution#0" expanded="false" />
+            <element signature="method#missingNumber#0;class#Solution#0" expanded="false" />
+            <element signature="class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#UnionFindSet#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="e#56988#57045#0" expanded="false" />
+            <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
+            <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowestCommonAncestor#0;class#Solution#0" expanded="false" />
+            <element signature="method#spiralOrder#0;class#Solution#0" expanded="false" />
+            <element signature="method#countBattleships#0;class#Solution#0" expanded="false" />
+            <element signature="method#alibabaTest#0;class#Solution#0" expanded="false" />
+            <element signature="class#RandomListNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#RandomListNode#0;class#RandomListNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#copyRandomList#0;class#Solution#0" expanded="false" />
+            <element signature="method#findItinerary#0;class#Solution#0" expanded="false" />
+            <element signature="method#visit#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidSerialization#0;class#Solution#0" expanded="false" />
+            <element signature="method#threeWayPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#wiggleSort#0;class#Solution#0" expanded="false" />
+            <element signature="method#swap#0;class#Solution#0" expanded="false" />
+            <element signature="method#coinChange#0;class#Solution#0" expanded="false" />
+            <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
+            <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
+            <element signature="class#72831:73217" expanded="false" />
+            <element signature="method#Num#0;class#72831:73217" expanded="false" />
+            <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
+            <element signature="e#75838#75852#0" expanded="false" />
+            <element signature="e#76640#76667#0" expanded="false" />
+            <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
+            <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
+            <element signature="method#isAdditiveNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#subIsAdditiveNumber#0;class#Solution#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -698,7 +1233,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2068">
           <caret line="96" column="1" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="e#1297#1298#0" expanded="false" />
+            <element signature="e#1333#1334#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -708,6 +1246,118 @@
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
+            <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#rob#0;class#Solution#0" expanded="false" />
+            <element signature="method#subRob#0;class#Solution#0" expanded="false" />
+            <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
+            <element signature="method#subPermuteUnique#0;class#Solution#0" expanded="false" />
+            <element signature="method#flatten#0;class#Solution#0" expanded="false" />
+            <element signature="method#flattenByLoop#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLIS#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowerBound#0;class#Solution#0" expanded="false" />
+            <element signature="method#canJump#0;class#Solution#0" expanded="false" />
+            <element signature="method#canMeasureWater#0;class#Solution#0" expanded="false" />
+            <element signature="method#GCD#0;class#Solution#0" expanded="false" />
+            <element signature="method#merge#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#subMaxPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPalindrome#0;class#Solution#0" expanded="false" />
+            <element signature="method#getTrimedString#0;class#Solution#0" expanded="false" />
+            <element signature="method#findPeakElement#0;class#Solution#0" expanded="false" />
+            <element signature="method#compareVersion#0;class#Solution#0" expanded="false" />
+            <element signature="method#trimRightZeros#0;class#Solution#0" expanded="false" />
+            <element signature="method#numDecodings#0;class#Solution#0" expanded="false" />
+            <element signature="method#permute#0;class#Solution#0" expanded="false" />
+            <element signature="method#subPermute#0;class#Solution#0" expanded="false" />
+            <element signature="method#exist#0;class#Solution#0" expanded="false" />
+            <element signature="method#subExist#0;class#Solution#0" expanded="false" />
+            <element signature="method#addDigits#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseKGroup#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasKGroup#0;class#Solution#0" expanded="false" />
+            <element signature="method#longestPalindrome#0;class#Solution#0" expanded="false" />
+            <element signature="method#threeSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#countPrimes#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPrime#0;class#Solution#0" expanded="false" />
+            <element signature="method#buildTree#0;class#Solution#0" expanded="false" />
+            <element signature="method#subBuildTree#0;class#Solution#0" expanded="false" />
+            <element signature="method#findPos#0;class#Solution#0" expanded="false" />
+            <element signature="method#firstUniqChar#0;class#Solution#0" expanded="false" />
+            <element signature="method#simplifyPath#0;class#Solution#0" expanded="false" />
+            <element signature="method#removeDuplicates#0;class#Solution#0" expanded="false" />
+            <element signature="method#findKthLargest#0;class#Solution#0" expanded="false" />
+            <element signature="method#bookPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#lomutoPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#hoarePartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#getIntersectionNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#hammingWeight#0;class#Solution#0" expanded="false" />
+            <element signature="method#swapPairs#0;class#Solution#0" expanded="false" />
+            <element signature="method#search#0;class#Solution#0" expanded="false" />
+            <element signature="method#romanToInt#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidBST#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidBSTRecursive#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValid#0;class#Solution#0" expanded="false" />
+            <element signature="method#calculateMinimumHP#0;class#Solution#0" expanded="false" />
+            <element signature="method#myAtoi#0;class#Solution#0" expanded="false" />
+            <element signature="method#checkOutofBound#0;class#Solution#0" expanded="false" />
+            <element signature="method#trimData#0;class#Solution#0" expanded="false" />
+            <element signature="method#addTwoNumbers2#0;class#Solution#0" expanded="false" />
+            <element signature="method#convertToTitle#0;class#Solution#0" expanded="false" />
+            <element signature="method#addTwoNumbers#0;class#Solution#0" expanded="false" />
+            <element signature="method#subAddOneNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#subAddTwoNumbers#0;class#Solution#0" expanded="false" />
+            <element signature="method#deleteNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasCycle#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProfit121#0;class#Solution#0" expanded="false" />
+            <element signature="method#setZeroes#0;class#Solution#0" expanded="false" />
+            <element signature="method#productExceptSelf#0;class#Solution#0" expanded="false" />
+            <element signature="method#zigzagLevelOrder#0;class#Solution#0" expanded="false" />
+            <element signature="method#sortColors#0;class#Solution#0" expanded="false" />
+            <element signature="class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#TreeLinkNode#0;class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#connect#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseWords#0;class#Solution#0" expanded="false" />
+            <element signature="method#subReverseWords#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxSubArray#0;class#Solution#0" expanded="false" />
+            <element signature="method#missingNumber#0;class#Solution#0" expanded="false" />
+            <element signature="class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#UnionFindSet#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="e#56988#57045#0" expanded="false" />
+            <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
+            <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowestCommonAncestor#0;class#Solution#0" expanded="false" />
+            <element signature="method#spiralOrder#0;class#Solution#0" expanded="false" />
+            <element signature="method#countBattleships#0;class#Solution#0" expanded="false" />
+            <element signature="method#alibabaTest#0;class#Solution#0" expanded="false" />
+            <element signature="class#RandomListNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#RandomListNode#0;class#RandomListNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#copyRandomList#0;class#Solution#0" expanded="false" />
+            <element signature="method#findItinerary#0;class#Solution#0" expanded="false" />
+            <element signature="method#visit#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidSerialization#0;class#Solution#0" expanded="false" />
+            <element signature="method#threeWayPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#wiggleSort#0;class#Solution#0" expanded="false" />
+            <element signature="method#swap#0;class#Solution#0" expanded="false" />
+            <element signature="method#coinChange#0;class#Solution#0" expanded="false" />
+            <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
+            <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
+            <element signature="class#72831:73217" expanded="false" />
+            <element signature="method#Num#0;class#72831:73217" expanded="false" />
+            <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
+            <element signature="e#75838#75852#0" expanded="false" />
+            <element signature="e#76640#76667#0" expanded="false" />
+            <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
+            <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
+            <element signature="method#isAdditiveNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#subIsAdditiveNumber#0;class#Solution#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -723,33 +1373,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2068">
           <caret line="96" column="1" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode-java.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1297#1298#0" expanded="false" />
+            <element signature="e#1333#1334#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/PriorityQueue.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/nick/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/BitSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12848">
           <caret line="620" column="19" selection-start-line="620" selection-start-column="19" selection-end-line="620" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -757,7 +1392,234 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2068">
           <caret line="96" column="1" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
+          <folding>
+            <element signature="e#1297#1298#0" expanded="false" />
+            <element signature="e#1333#1334#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/math/BigInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="2455" column="22" selection-start-line="2455" selection-start-column="22" selection-end-line="2455" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/Codec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leetcode-java.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="291" column="16" selection-start-line="291" selection-start-column="16" selection-end-line="291" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="94" column="3" selection-start-line="94" selection-start-column="3" selection-end-line="94" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/BSTIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="e#203#204#0" expanded="false" />
+            <element signature="e#232#233#0" expanded="false" />
+            <element signature="e#322#323#0" expanded="false" />
+            <element signature="e#361#362#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/LRUCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/Interval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2305">
+          <caret line="108" column="17" selection-start-line="108" selection-start-column="17" selection-end-line="108" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="585" column="13" selection-start-line="585" selection-start-column="13" selection-end-line="585" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nick/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
+            <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#rob#0;class#Solution#0" expanded="false" />
+            <element signature="method#subRob#0;class#Solution#0" expanded="false" />
+            <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
+            <element signature="method#subPermuteUnique#0;class#Solution#0" expanded="false" />
+            <element signature="method#flatten#0;class#Solution#0" expanded="false" />
+            <element signature="method#flattenByLoop#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLIS#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowerBound#0;class#Solution#0" expanded="false" />
+            <element signature="method#canJump#0;class#Solution#0" expanded="false" />
+            <element signature="method#canMeasureWater#0;class#Solution#0" expanded="false" />
+            <element signature="method#GCD#0;class#Solution#0" expanded="false" />
+            <element signature="method#merge#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#subMaxPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasPathSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPalindrome#0;class#Solution#0" expanded="false" />
+            <element signature="method#getTrimedString#0;class#Solution#0" expanded="false" />
+            <element signature="method#findPeakElement#0;class#Solution#0" expanded="false" />
+            <element signature="method#compareVersion#0;class#Solution#0" expanded="false" />
+            <element signature="method#trimRightZeros#0;class#Solution#0" expanded="false" />
+            <element signature="method#numDecodings#0;class#Solution#0" expanded="false" />
+            <element signature="method#permute#0;class#Solution#0" expanded="false" />
+            <element signature="method#subPermute#0;class#Solution#0" expanded="false" />
+            <element signature="method#exist#0;class#Solution#0" expanded="false" />
+            <element signature="method#subExist#0;class#Solution#0" expanded="false" />
+            <element signature="method#addDigits#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseKGroup#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasKGroup#0;class#Solution#0" expanded="false" />
+            <element signature="method#longestPalindrome#0;class#Solution#0" expanded="false" />
+            <element signature="method#threeSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#countPrimes#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPrime#0;class#Solution#0" expanded="false" />
+            <element signature="method#buildTree#0;class#Solution#0" expanded="false" />
+            <element signature="method#subBuildTree#0;class#Solution#0" expanded="false" />
+            <element signature="method#findPos#0;class#Solution#0" expanded="false" />
+            <element signature="method#firstUniqChar#0;class#Solution#0" expanded="false" />
+            <element signature="method#simplifyPath#0;class#Solution#0" expanded="false" />
+            <element signature="method#removeDuplicates#0;class#Solution#0" expanded="false" />
+            <element signature="method#findKthLargest#0;class#Solution#0" expanded="false" />
+            <element signature="method#bookPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#lomutoPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#hoarePartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#getIntersectionNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#hammingWeight#0;class#Solution#0" expanded="false" />
+            <element signature="method#swapPairs#0;class#Solution#0" expanded="false" />
+            <element signature="method#search#0;class#Solution#0" expanded="false" />
+            <element signature="method#romanToInt#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidBST#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidBSTRecursive#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValid#0;class#Solution#0" expanded="false" />
+            <element signature="method#calculateMinimumHP#0;class#Solution#0" expanded="false" />
+            <element signature="method#myAtoi#0;class#Solution#0" expanded="false" />
+            <element signature="method#checkOutofBound#0;class#Solution#0" expanded="false" />
+            <element signature="method#trimData#0;class#Solution#0" expanded="false" />
+            <element signature="method#addTwoNumbers2#0;class#Solution#0" expanded="false" />
+            <element signature="method#convertToTitle#0;class#Solution#0" expanded="false" />
+            <element signature="method#addTwoNumbers#0;class#Solution#0" expanded="false" />
+            <element signature="method#subAddOneNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#subAddTwoNumbers#0;class#Solution#0" expanded="false" />
+            <element signature="method#deleteNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#hasCycle#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProfit121#0;class#Solution#0" expanded="false" />
+            <element signature="method#setZeroes#0;class#Solution#0" expanded="false" />
+            <element signature="method#productExceptSelf#0;class#Solution#0" expanded="false" />
+            <element signature="method#zigzagLevelOrder#0;class#Solution#0" expanded="false" />
+            <element signature="method#sortColors#0;class#Solution#0" expanded="false" />
+            <element signature="class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#TreeLinkNode#0;class#TreeLinkNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#connect#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseWords#0;class#Solution#0" expanded="false" />
+            <element signature="method#subReverseWords#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxSubArray#0;class#Solution#0" expanded="false" />
+            <element signature="method#missingNumber#0;class#Solution#0" expanded="false" />
+            <element signature="class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#UnionFindSet#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
+            <element signature="e#56988#57045#0" expanded="false" />
+            <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
+            <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
+            <element signature="method#lowestCommonAncestor#0;class#Solution#0" expanded="false" />
+            <element signature="method#spiralOrder#0;class#Solution#0" expanded="false" />
+            <element signature="method#countBattleships#0;class#Solution#0" expanded="false" />
+            <element signature="method#alibabaTest#0;class#Solution#0" expanded="false" />
+            <element signature="class#RandomListNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#RandomListNode#0;class#RandomListNode#0;class#Solution#0" expanded="false" />
+            <element signature="method#copyRandomList#0;class#Solution#0" expanded="false" />
+            <element signature="method#findItinerary#0;class#Solution#0" expanded="false" />
+            <element signature="method#visit#0;class#Solution#0" expanded="false" />
+            <element signature="method#isValidSerialization#0;class#Solution#0" expanded="false" />
+            <element signature="method#threeWayPartition#0;class#Solution#0" expanded="false" />
+            <element signature="method#wiggleSort#0;class#Solution#0" expanded="false" />
+            <element signature="method#swap#0;class#Solution#0" expanded="false" />
+            <element signature="method#coinChange#0;class#Solution#0" expanded="false" />
+            <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
+            <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
+            <element signature="class#72831:73217" expanded="false" />
+            <element signature="method#Num#0;class#72831:73217" expanded="false" />
+            <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
+            <element signature="e#75838#75852#0" expanded="false" />
+            <element signature="e#76640#76667#0" expanded="false" />
+            <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
+            <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
+            <element signature="method#isAdditiveNumber#0;class#Solution#0" expanded="false" />
+            <element signature="method#subIsAdditiveNumber#0;class#Solution#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

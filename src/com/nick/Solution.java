@@ -15,21 +15,351 @@ public class Solution {
     * */
     public static void main(String[] args) {
         Solution solution = new Solution();
-        ListNode a = new ListNode(1);
-        ListNode b = new ListNode(2);
-        ListNode c = new ListNode(3);
-        a.next = b;
-        b.next = c;
-        ListNode dd = solution.oddEvenList(a);
-        out.println(dd.val);
+        int[] tmp = {1};
         //int[] tmp = {1,2};
         //int[] tmp1 = {3,4};
         //out.println(solution.findMedianSortedArrays(tmp, tmp1));
     }
 
     /*
+    * Leetcode 368. Largest Divisible Subset
+    * */
+    public List<Integer> largestDivisibleSubset(int[] nums) {
+        int[] dp = new int[nums.length];
+        int[] parent = new int[nums.length];
+        int m = 0, mi = 0;
+        Arrays.sort(nums);
+
+        for (int i = nums.length - 1; i >= 0; i --) {
+            for (int j = i; j < nums.length; j ++) {
+                if (nums[j] % nums[i] == 0 && dp[i] < dp[j] + 1) {
+                    dp[i] = dp[j] + 1;
+                    parent[i] = j;
+
+                    if (dp[i] > m) {
+                        m = dp[i];
+                        mi = i;
+                    }
+                }
+            }
+        }
+
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < m; i ++) {
+            list.add(nums[mi]);
+            mi = parent[mi];
+        }
+
+        return list;
+    }
+
+    /*
+    * Leetcode 367. Valid Perfect Square
+    * */
+    public boolean isPerfectSquare(int num) {
+        if (num == 1) {
+            return true;
+        }
+        for (int i = 1; i <= num / 2; i ++) {
+            if (i * i == num) {
+                return true;
+            } else if (i * i > num) {
+                return false;
+            }
+        }
+
+        return false;
+    }
+
+    /*
+    * Leetcode 357. Count Numbers with Unique Digits
+    * */
+    public int countNumbersWithUniqueDigits(int n) {
+        if (n == 0) {
+            return 1;
+        }
+        int sum = 10, last = 9;
+        for (int i = 2; i <= n && i <= 10; i ++) {
+            last = last * (9 - i + 2);
+            sum += last;
+        }
+
+        return sum;
+    }
+
+    /*
+    * Leetcode 350. Intersection of Two Arrays II
+    * */
+    public int[] intersect(int[] nums1, int[] nums2) {
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i : nums1) {
+            if (map.containsKey(i)) {
+                map.put(i, map.get(i) + 1);
+            } else {
+                map.put(i, 1);
+            }
+        }
+        List<Integer> list = new ArrayList<>();
+        for (int i : nums2) {
+            if (map.containsKey(i) && map.get(i) != 0) {
+                list.add(i);
+                map.put(i, map.get(i) - 1);
+            }
+        }
+
+        int[] t = new int[list.size()];
+        Iterator it = list.iterator();
+        for (int i = 0; it.hasNext(); i ++) {
+            t[i] = (int) it.next();
+        }
+
+        return t;
+    }
+
+    /*
+    * Leetcode 349. Intersection of Two Arrays
+    * */
+    public int[] intersection(int[] nums1, int[] nums2) {
+        /* This also can use HashSet directly...or sort then compare... */
+        Map<Integer, Boolean> map = new HashMap<>();
+        for (int i : nums1) {
+            map.put(i, true);
+        }
+        List<Integer> list = new ArrayList<>();
+        for (int i : nums2) {
+            if (map.containsKey(i) && map.get(i)) {
+                list.add(i);
+                map.put(i, false);
+            }
+        }
+
+        int[] t = new int[list.size()];
+        Iterator it = list.iterator();
+        for (int i = 0; it.hasNext(); i ++) {
+            t[i] = (int) it.next();
+        }
+
+        return t;
+    }
+
+    /*
+    * Leetcode 347. Top K Frequent Elements
+    * */
+    //out.println(solution.topKFrequent(tmp, 1));
+    public List<Integer> topKFrequent(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+        Arrays.sort(nums);
+        int start = 0;
+        while (nums[start] != nums[nums.length - 1]) {
+            int pos = myBinarySearch(nums, start, nums.length - 1);
+            map.put(nums[start], pos - start);
+            start = pos + 1;
+        }
+        map.put(nums[start], nums.length - 1 - start);
+
+        PriorityQueue<Map.Entry<Integer, Integer>> heap = new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            heap.offer(entry);
+            if (heap.size() > k) {
+                heap.poll();
+            }
+        }
+
+        List<Integer> res = new LinkedList<>();
+        while (!heap.isEmpty()) {
+            res.add(0, heap.poll().getKey());
+        }
+
+        return res;
+    }
+
+    public int myBinarySearch(int[] nums, int from, int to) {
+        int target = nums[from++];
+        while (from <= to) {
+            int mid = (from + to) / 2;
+            if (nums[mid] > target) {
+                to = mid - 1;
+            } else {
+                from = mid + 1;
+            }
+        }
+
+        if (to < nums.length && nums[to] == target) {
+            return to;
+        }
+
+        return -1;
+    }
+
+    /*
+    * Leetcode 345. Reverse Vowels of a String
+    * */
+    //out.println(solution.reverseString("abcde"));
+    public String reverseVowels(String s) {
+        char[] chs = s.toCharArray();
+        int left = 0, right = chs.length - 1;
+        while (left <= right) {
+            while (left <= right
+                    && chs[left] != 'a' && chs[left] != 'e' && chs[left] != 'i' && chs[left] != 'o' && chs[left] != 'u'
+                    && chs[left] != 'A' && chs[left] != 'E' && chs[left] != 'I' && chs[left] != 'O' && chs[left] != 'U') {
+                left ++;
+            }
+            while (left <= right
+                    && chs[right] != 'a' && chs[right] != 'e' && chs[right] != 'i' && chs[right] != 'o' && chs[right] != 'u'
+                    && chs[right] != 'A' && chs[right] != 'E' && chs[right] != 'I' && chs[right] != 'O' && chs[right] != 'U') {
+                right --;
+            }
+            if (left > right) {
+                break;
+            }
+            char t = chs[left];
+            chs[left] = chs[right];
+            chs[right] = t;
+            left ++;
+            right --;
+        }
+
+        return String.valueOf(chs);
+    }
+
+    /*
+    * Leetcode 344. Reverse String
+    * */
+    public String reverseString(String s) {
+        char[] chs = s.toCharArray();
+        int left = 0, right = chs.length - 1;
+        while (left <= right) {
+            char c = chs[left];
+            chs[left] = chs[right];
+            chs[right] = c;
+            left ++;
+            right --;
+        }
+
+        return String.valueOf(chs);
+    }
+
+    /*
+    * Leetcode 343. Integer Break
+    * */
+    int integerBreakMax = 1;
+    //out.println(solution.integerBreak(10));
+    public int integerBreak(int n) {
+        /* WARNING this problem has other smart math method to solve...see leetcode... */
+        /* DP */
+        int[] dp = new int[n+1];
+        dp[1] = 1;
+        dp[2] = 1;
+        for (int i = 3; i <= n; i ++) {
+            for (int j = 1; j < i; j ++) {
+                dp[i] = Math.max(j * dp[i - j], Math.max(dp[i], j * (i - j)));
+            }
+        }
+
+        return dp[n];
+        /*
+        Violence Solution
+        Traverse all situations...
+
+        subIntegerBreak(n, 1, true);
+        return integerBreakMax;
+        */
+    }
+
+    public void subIntegerBreak(int remain, int multi, boolean isFirst) {
+        if (remain <= 1) {
+            if (integerBreakMax < multi) {
+                integerBreakMax = multi;
+            }
+            return ;
+        }
+
+        for (int i = 1; i <= remain; i ++) {
+            if (isFirst && remain == i) {
+                break;
+            }
+            subIntegerBreak(remain - i, multi * i, false);
+        }
+    }
+
+    /*
+    * Leetcode 342. Power of Four
+    * */
+    //out.println(solution.isPowerOfFour(8));
+    public boolean isPowerOfFour(int num) {
+        return num > 0 && (num & (num - 1)) == 0 && (num & 0x55555555) != 0;
+    }
+
+    /*
+    * Leetcode 338. Counting Bits
+    * */
+    public int[] countBits(int num) {
+        int[] f = new int[num + 1];
+        for (int i = 1; i <= num; i ++) {
+            f[i] = f[i >> 1] + (i & 1);
+        }
+
+        return f;
+    }
+
+    /*
+    * Leetcode 337. House Robber III
+    * */
+    public int rob(TreeNode root) {
+        /*
+        First method... if use root, then search its children's children
+        else, search its children. Finally get max.
+        if (root == null) {
+            return 0;
+        }
+
+        int val = 0;
+
+        if (root.left != null) {
+            val += rob(root.left.left) + rob(root.left.right);
+        }
+
+        if (root.right != null) {
+            val += rob(root.right.left) + rob(root.right.right);
+        }
+
+        return Math.max(val + root.val, rob(root.left) + rob(root.right));
+        */
+        /*
+        * Second method...
+        * Only need an array which contains two elements
+        * the first one means if we do not use root's result
+        * the second one means if we use this root's result.
+        * */
+        int[] res = subRob337(root);
+        return Math.max(res[0], res[1]);
+    }
+
+    public int[] subRob337(TreeNode root) {
+        if (root == null) {
+            return new int[2];
+        }
+
+        int[] left = subRob337(root.left);
+        int[] right = subRob337(root.right);
+        int[] res = new int[2];
+
+        res[0] = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
+        res[1] = root.val + left[0] + right[0];
+
+        return res;
+    }
+
+    /*
     * Leetcode 328. Odd Even Linked List
     * */
+    //ListNode a = new ListNode(1);
+    //ListNode b = new ListNode(2);
+    //ListNode c = new ListNode(3);
+    //a.next = b;
+    //b.next = c;
+    //ListNode dd = solution.oddEvenList(a);
+    //out.println(dd.val);
     public ListNode oddEvenList(ListNode head) {
         if (head == null || head.next == null) {
             return head;

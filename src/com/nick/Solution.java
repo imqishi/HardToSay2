@@ -15,10 +15,364 @@ public class Solution {
     * */
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] tmp = {1};
-        //int[] tmp = {1,2};
-        //int[] tmp1 = {3,4};
-        //out.println(solution.findMedianSortedArrays(tmp, tmp1));
+        int[][] tmp = {{1,5,9},{10,11,13},{12,13,15}};
+        solution.kthSmallestBinarySearch(tmp, 8);
+        //out.println(solution.combinationSum4(tmp, 4));
+    }
+
+    /*
+    * Leetcode 378. Kth Smallest Element in a Sorted Matrix
+    * */
+    class Tuple implements Comparable<Tuple> {
+        int x, y, val;
+        public Tuple(int x, int y, int val) {
+            this.x = x;
+            this.y = y;
+            this.val = val;
+        }
+
+        @Override
+        public int compareTo(Tuple o) {
+            return this.val - o.val;
+        }
+    }
+    public int kthSmallest(int[][] matrix, int k) {
+        PriorityQueue<Tuple> heap = new PriorityQueue<>();
+        for (int j = 0; j < matrix.length; j ++) {
+            heap.offer(new Tuple(0, j, matrix[0][j]));
+        }
+
+        for (int i = 0; i < k - 1; i ++) {
+            Tuple t = heap.poll();
+            if (t.x == matrix.length - 1) {
+                continue;
+            }
+            heap.offer(new Tuple(t.x + 1, t.y, matrix[t.x + 1][t.y]));
+        }
+
+        return heap.poll().val;
+    }
+
+    public int kthSmallestBinarySearch(int[][] matrix, int k) {
+        int lo = matrix[0][0], hi = matrix[matrix.length - 1][matrix[0].length - 1] + 1;
+        while (lo < hi) {
+            int mid = lo + (hi - lo) / 2;
+            int count = 0, j = matrix[0].length - 1;
+            for (int i = 0; i < matrix.length; i ++) {
+                while (j >= 0 && matrix[i][j] > mid) {
+                    j --;
+                }
+                count += (j + 1);
+            }
+            if (count < k) {
+                lo = mid + 1;
+            } else {
+                hi = mid;
+            }
+        }
+
+        return lo;
+    }
+
+    public int lengthOfLongestSubstring(String s) {
+        int n = s.length();
+        Set<Character> set = new HashSet<>();
+        int res = 0, i = 0, j = 0;
+        while (i < n && j < n) {
+            if (! set.contains(s.charAt(j))) {
+                set.add(s.charAt(j));
+                j ++;
+                res = Math.max(res, j - i);
+            } else {
+                set.remove(s.charAt(i));
+                i ++;
+            }
+        }
+
+        return res;
+    }
+
+    public int lengthOfLongestSubstring2(String s) {
+        int n = s.length(), res = 0;
+        Map<Character, Integer> map = new HashMap<>();
+        for (int j = 0, i = 0; j < n; j ++) {
+            if (map.containsKey(s.charAt(j))) {
+                i = Math.max(map.get(s.charAt(j)), i);
+            }
+
+            res = Math.max(res, j - i + 1);
+            map.put(s.charAt(j), j + 1);
+        }
+
+        return res;
+    }
+
+    /*
+    * Leetcode 377. Combination Sum IV
+    * */
+    public int combinationSum4(int[] nums, int target) {
+        int[] dp = new int[target + 1];
+        dp[0] = 1;
+        for (int i = 1; i <= target; i ++) {
+            for (int j = 0; j < nums.length; j ++) {
+                if (i - nums[j] >= 0) {
+                    dp[i] += dp[i - nums[j]];
+                }
+            }
+        }
+
+        return dp[target];
+    }
+
+    // this will cause time limit exceeded
+    int cS4Sum = 0;
+    public void subCombinationSum4(int[] nums, int target, int curSum) {
+        if (target == curSum) {
+            cS4Sum ++;
+            return ;
+        } else if (target < curSum) {
+            return ;
+        }
+
+        for (int i = 0; i < nums.length; i ++) {
+            subCombinationSum4(nums, target, curSum + nums[i]);
+        }
+    }
+
+    /*
+    * Leetcode 376. Wiggle Subsequence
+    * */
+    public int wiggleMaxLength(int[] nums) {
+        if (nums.length <= 1) {
+            return nums.length;
+        }
+        int k = 0;
+        while (k < nums.length - 1 && nums[k] == nums[k + 1]) {
+            k ++;
+        }
+        if (k == nums.length - 1) {
+            return 1;
+        }
+
+        int res = 2;
+        boolean needBig = nums[k] < nums[k + 1];
+        for (int i = k + 1; i < nums.length - 1; i ++) {
+            if (needBig && nums[i] > nums[i + 1]) {
+                nums[res] = nums[i + 1];
+                res ++;
+                needBig = ! needBig;
+            } else {
+                if (! needBig && nums[i] < nums[i + 1]) {
+                    nums[res] = nums[i + 1];
+                    res ++;
+                    needBig = ! needBig;
+                }
+            }
+        }
+        return res;
+    }
+
+    /*
+    * Leetcode 375. Guess Number Higher or Lower II
+    * */
+    //out.println(solution.getMoneyAmount(10));
+    public int getMoneyAmount(int n) {
+        if (n == 1) {
+            return 0;
+        }
+        int[][] dp = new int[n + 1][n + 1];
+        for (int len = 1; len < n; len ++) {
+            for (int i = 0; i + len <= n; i ++) {
+                int j = i + len;
+                dp[i][j] = Integer.MAX_VALUE;
+                for (int k = i; k <= j; k ++) {
+                    dp[i][j] = Math.min(dp[i][j], k + Math.max(k - 1 >= i ? dp[i][k-1] : 0, j >= k + 1 ? dp[k+1][j] : 0));
+                }
+            }
+        }
+
+        return dp[1][n];
+    }
+
+    /*
+    * Leetcode 373. Find K Pairs with Smallest Sums
+    * */
+    //int[] tmp = {1,1,2};
+    //int[] tmp1 = {1,2,3};
+    //solution.kSmallestPairs(tmp, tmp1, 10);
+    public List<int[]> kSmallestPairs(int[] nums1, int[] nums2, int k) {
+        PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> a[0] + a[1] - b[0] - b[1]);
+        List<int[]> list = new ArrayList<>();
+
+        if (k > nums1.length * nums2.length) {
+            k = nums1.length * nums2.length;
+        }
+        if (k == 0) {
+            return list;
+        }
+
+        for (int i = 0; i < nums1.length && i < k; i ++) {
+            queue.offer(new int[]{ nums1[i], nums2[0], 0 });
+        }
+
+        while (k-- > 0 && !queue.isEmpty()) {
+            int[] cur = queue.poll();
+            list.add(new int[]{ cur[0], cur[1] });
+            if (cur[2] == nums2.length - 1) {
+                continue;
+            }
+            queue.offer(new int[]{ cur[0], nums2[cur[2]+1], cur[2] + 1 });
+        }
+
+        return list;
+    }
+
+    /*
+    * Leetcode 371. Sum of Two Integers
+    * */
+    public int getSum(int a, int b) {
+        int t = 0;
+        while (b != 0) {
+            t = a & b;
+            a = a ^ b;
+            b = t << 1;
+        }
+
+        return a;
+    }
+
+    /* 单调栈总结 */
+    //int[] tmp = {3,1,6,4,5,2};
+    //out.println(solution.maxResult(tmp));
+    public int[] maxResult(int[] arr) {
+        int[] res = new int[3];
+        int[] work = new int[arr.length + 1];
+        int[] sum = new int[arr.length + 1];
+        sum[0] = arr[0];
+        for (int i = 0; i <= arr.length; i ++) {
+            if (i == arr.length) {
+                work[i] = -1;
+            } else {
+                if (i > 0) {
+                    sum[i] = sum[i - 1] + arr[i];
+                }
+                work[i] = arr[i];
+            }
+        }
+
+        Stack<Integer> stack = new Stack<>();
+        int topPos = 0;
+        for (int i = 0; i < work.length; i ++) {
+            if (stack.empty() || work[stack.peek()] <= work[i]) {
+                stack.push(i);
+            } else {
+                while (!stack.empty() && work[stack.peek()] > work[i]) {
+                    topPos = stack.pop();
+                    int tmp = 0;
+                    if (topPos == 0) {
+                        tmp = sum[0];
+                    } else {
+                        tmp = sum[i - 1] - sum[topPos - 1];
+                    }
+                    tmp *= work[topPos];
+                    if (tmp > res[0]) {
+                        res[0] = tmp;
+                        res[1] = topPos;
+                        res[2] = i;
+                    }
+                }
+                stack.push(topPos);
+                work[topPos] = work[i];
+            }
+        }
+
+        return res;
+    }
+
+    public int[] firstGreaterOne(int[] arr) {
+        int[] res = new int[arr.length];
+        Arrays.fill(res, -1);
+        Stack<Integer> stack = new Stack<>();
+
+        for (int i = 0; i < arr.length; i ++) {
+            if (stack.empty() || arr[i] <= arr[stack.peek()]) {
+                stack.push(i);
+            } else {
+                while (!stack.empty() && arr[i] > arr[stack.peek()]) {
+                    int pos = stack.pop();
+                    res[pos] = i;
+                }
+                stack.push(i);
+            }
+        }
+        for (int i : res) {
+            out.println(i);
+        }
+
+        return res;
+    }
+
+    public int maxArea(int[] heights) {
+        int[] work = new int[heights.length + 1];
+        for (int i = 0; i <= heights.length; i ++) {
+            if (i == heights.length) {
+                work[i] = -1;
+            } else {
+                work[i] = heights[i];
+            }
+        }
+        Stack<Integer> stack = new Stack<>();
+        int ans = 0, topPos = 0;
+        for (int i = 0; i < work.length; i ++) {
+            if (stack.empty() || work[i] >= work[stack.peek()]) {
+                stack.push(i);
+            } else {
+                while (!stack.empty() && work[i] < work[stack.peek()]) {
+                    topPos = stack.pop();
+                    int tmp = (i - topPos) * work[topPos];
+                    if (tmp > ans) {
+                        ans = tmp;
+                    }
+                }
+                stack.push(topPos);
+                work[topPos] = work[i];
+            }
+        }
+
+        return ans;
+    }
+
+    /*
+    * Leetcode 372. Super Pow
+    * */
+    //int[] tmp = {1,0};
+    //out.println(solution.superPower(2,tmp));
+    final int BASE = 1337;
+    public int superPower(int a, int[] b) {
+        LinkedList<Integer> bList = new LinkedList<>();
+        for (int i : b) {
+            bList.add(i);
+        }
+        return subSuperPower(a, bList);
+    }
+
+    public int subSuperPower(int a, LinkedList<Integer> b) {
+        if (b.size() == 0) {
+            return 1;
+        }
+        int last_digit = b.removeLast();
+
+        return powMod(subSuperPower(a, b), 10) * powMod(a, last_digit) % BASE;
+    }
+
+    public int powMod(int a, int k) {
+        a %= BASE;
+        int res = 1;
+        for (int i = 0; i < k; i ++) {
+            res = (res * a) % BASE;
+        }
+
+        return res;
     }
 
     /*
@@ -413,6 +767,7 @@ public class Solution {
     }
 
     /* Tree Traverse By Loop */
+    /* Important! Interview Asked.. */
     public List<Integer> traversePreorder(TreeNode root) {
         ArrayList<Integer> list = new ArrayList<>();
         if (root == null) {

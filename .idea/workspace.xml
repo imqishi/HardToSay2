@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed39ad8-65bb-43cc-9963-da591c67c89b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nick/Twitter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nick/Solution.java" afterPath="$PROJECT_DIR$/src/com/nick/Solution.java" />
     </list>
     <ignored path="leetcode-java.iws" />
@@ -30,17 +28,36 @@
       <file leaf-file-name="Solution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nick/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="class#Tuple#0;class#Solution#0" expanded="false" />
+                <element signature="method#kthSmallest#0;class#Solution#0" expanded="false" />
+                <element signature="method#kthSmallestBinarySearch#0;class#Solution#0" expanded="false" />
+                <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" expanded="false" />
+                <element signature="method#lengthOfLongestSubstring2#0;class#Solution#0" expanded="false" />
+                <element signature="method#combinationSum4#0;class#Solution#0" expanded="false" />
+                <element signature="method#subCombinationSum4#0;class#Solution#0" expanded="false" />
+                <element signature="method#wiggleMaxLength#0;class#Solution#0" expanded="false" />
+                <element signature="method#getMoneyAmount#0;class#Solution#0" expanded="false" />
+                <element signature="method#kSmallestPairs#0;class#Solution#0" expanded="false" />
+                <element signature="method#getSum#0;class#Solution#0" expanded="false" />
+                <element signature="method#maxResult#0;class#Solution#0" expanded="false" />
+                <element signature="method#firstGreaterOne#0;class#Solution#0" expanded="false" />
+                <element signature="method#maxArea#0;class#Solution#0" expanded="false" />
+                <element signature="method#superPower#0;class#Solution#0" expanded="false" />
+                <element signature="method#subSuperPower#0;class#Solution#0" expanded="false" />
+                <element signature="method#powMod#0;class#Solution#0" expanded="false" />
                 <element signature="method#largestDivisibleSubset#0;class#Solution#0" expanded="false" />
+                <element signature="method#isPerfectSquare#0;class#Solution#0" expanded="false" />
                 <element signature="method#countNumbersWithUniqueDigits#0;class#Solution#0" expanded="false" />
                 <element signature="method#intersect#0;class#Solution#0" expanded="false" />
                 <element signature="method#intersection#0;class#Solution#0" expanded="false" />
                 <element signature="method#topKFrequent#0;class#Solution#0" expanded="false" />
                 <element signature="method#myBinarySearch#0;class#Solution#0" expanded="false" />
                 <element signature="method#reverseVowels#0;class#Solution#0" expanded="false" />
+                <element signature="method#reverseString#0;class#Solution#0" expanded="false" />
                 <element signature="method#integerBreak#0;class#Solution#0" expanded="false" />
                 <element signature="method#subIntegerBreak#0;class#Solution#0" expanded="false" />
                 <element signature="method#countBits#0;class#Solution#0" expanded="false" />
@@ -50,6 +67,7 @@
                 <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
                 <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
                 <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+                <element signature="method#traversePostorder#0;class#Solution#0" expanded="false" />
                 <element signature="method#rob#1;class#Solution#0" expanded="false" />
                 <element signature="method#subRob#0;class#Solution#0" expanded="false" />
                 <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
@@ -128,7 +146,7 @@
                 <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
                 <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
                 <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
-                <element signature="e#66081#66138#0" expanded="false" />
+                <element signature="e#76148#76205#0" expanded="false" />
                 <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
                 <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
                 <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
@@ -149,11 +167,11 @@
                 <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
                 <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
                 <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
-                <element signature="class#81924:82310" expanded="false" />
-                <element signature="method#Num#0;class#81924:82310" expanded="false" />
+                <element signature="class#91991:92377" expanded="false" />
+                <element signature="method#Num#0;class#91991:92377" expanded="false" />
                 <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
-                <element signature="e#84931#84945#0" expanded="false" />
-                <element signature="e#85733#85760#0" expanded="false" />
+                <element signature="e#94998#95012#0" expanded="false" />
+                <element signature="e#95800#95827#0" expanded="false" />
                 <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
                 <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
                 <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
@@ -169,16 +187,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
               <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="169" column="13" selection-start-line="169" selection-start-column="13" selection-end-line="169" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -224,8 +232,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="-267" />
+    <option name="y" value="-1080" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -785,36 +795,36 @@
       <workItem from="1522849724652" duration="2217000" />
       <workItem from="1523027874654" duration="598000" />
       <workItem from="1523281227727" duration="140814000" />
-      <workItem from="1524565077997" duration="30460000" />
+      <workItem from="1524565077997" duration="58075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187519000" />
+    <option name="totallyTimeSpent" value="215134000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="-267" y="-1080" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281704" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270809" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23798358" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29777256" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21200387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1515625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3587339" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34559536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -836,7 +846,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="104" />
+      <option name="time" value="116" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -851,13 +861,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Tuple#0;class#Solution#0" expanded="false" />
+            <element signature="method#kthSmallest#0;class#Solution#0" expanded="false" />
+            <element signature="method#kthSmallestBinarySearch#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLongestSubstring2#0;class#Solution#0" expanded="false" />
+            <element signature="method#combinationSum4#0;class#Solution#0" expanded="false" />
+            <element signature="method#subCombinationSum4#0;class#Solution#0" expanded="false" />
+            <element signature="method#wiggleMaxLength#0;class#Solution#0" expanded="false" />
+            <element signature="method#getMoneyAmount#0;class#Solution#0" expanded="false" />
+            <element signature="method#kSmallestPairs#0;class#Solution#0" expanded="false" />
+            <element signature="method#getSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxResult#0;class#Solution#0" expanded="false" />
+            <element signature="method#firstGreaterOne#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxArea#0;class#Solution#0" expanded="false" />
+            <element signature="method#superPower#0;class#Solution#0" expanded="false" />
+            <element signature="method#subSuperPower#0;class#Solution#0" expanded="false" />
+            <element signature="method#powMod#0;class#Solution#0" expanded="false" />
             <element signature="method#largestDivisibleSubset#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPerfectSquare#0;class#Solution#0" expanded="false" />
             <element signature="method#countNumbersWithUniqueDigits#0;class#Solution#0" expanded="false" />
             <element signature="method#intersect#0;class#Solution#0" expanded="false" />
             <element signature="method#intersection#0;class#Solution#0" expanded="false" />
             <element signature="method#topKFrequent#0;class#Solution#0" expanded="false" />
             <element signature="method#myBinarySearch#0;class#Solution#0" expanded="false" />
             <element signature="method#reverseVowels#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseString#0;class#Solution#0" expanded="false" />
             <element signature="method#integerBreak#0;class#Solution#0" expanded="false" />
             <element signature="method#subIntegerBreak#0;class#Solution#0" expanded="false" />
             <element signature="method#countBits#0;class#Solution#0" expanded="false" />
@@ -867,6 +896,7 @@
             <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
             <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
             <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#traversePostorder#0;class#Solution#0" expanded="false" />
             <element signature="method#rob#1;class#Solution#0" expanded="false" />
             <element signature="method#subRob#0;class#Solution#0" expanded="false" />
             <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
@@ -945,7 +975,7 @@
             <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
             <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
             <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
-            <element signature="e#66081#66138#0" expanded="false" />
+            <element signature="e#76148#76205#0" expanded="false" />
             <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
             <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
             <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
@@ -966,11 +996,11 @@
             <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
             <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
             <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
-            <element signature="class#81924:82310" expanded="false" />
-            <element signature="method#Num#0;class#81924:82310" expanded="false" />
+            <element signature="class#91991:92377" expanded="false" />
+            <element signature="method#Num#0;class#91991:92377" expanded="false" />
             <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
-            <element signature="e#84931#84945#0" expanded="false" />
-            <element signature="e#85733#85760#0" expanded="false" />
+            <element signature="e#94998#95012#0" expanded="false" />
+            <element signature="e#95800#95827#0" expanded="false" />
             <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
             <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
             <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
@@ -1004,13 +1034,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Tuple#0;class#Solution#0" expanded="false" />
+            <element signature="method#kthSmallest#0;class#Solution#0" expanded="false" />
+            <element signature="method#kthSmallestBinarySearch#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLongestSubstring2#0;class#Solution#0" expanded="false" />
+            <element signature="method#combinationSum4#0;class#Solution#0" expanded="false" />
+            <element signature="method#subCombinationSum4#0;class#Solution#0" expanded="false" />
+            <element signature="method#wiggleMaxLength#0;class#Solution#0" expanded="false" />
+            <element signature="method#getMoneyAmount#0;class#Solution#0" expanded="false" />
+            <element signature="method#kSmallestPairs#0;class#Solution#0" expanded="false" />
+            <element signature="method#getSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxResult#0;class#Solution#0" expanded="false" />
+            <element signature="method#firstGreaterOne#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxArea#0;class#Solution#0" expanded="false" />
+            <element signature="method#superPower#0;class#Solution#0" expanded="false" />
+            <element signature="method#subSuperPower#0;class#Solution#0" expanded="false" />
+            <element signature="method#powMod#0;class#Solution#0" expanded="false" />
             <element signature="method#largestDivisibleSubset#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPerfectSquare#0;class#Solution#0" expanded="false" />
             <element signature="method#countNumbersWithUniqueDigits#0;class#Solution#0" expanded="false" />
             <element signature="method#intersect#0;class#Solution#0" expanded="false" />
             <element signature="method#intersection#0;class#Solution#0" expanded="false" />
             <element signature="method#topKFrequent#0;class#Solution#0" expanded="false" />
             <element signature="method#myBinarySearch#0;class#Solution#0" expanded="false" />
             <element signature="method#reverseVowels#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseString#0;class#Solution#0" expanded="false" />
             <element signature="method#integerBreak#0;class#Solution#0" expanded="false" />
             <element signature="method#subIntegerBreak#0;class#Solution#0" expanded="false" />
             <element signature="method#countBits#0;class#Solution#0" expanded="false" />
@@ -1020,6 +1069,7 @@
             <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
             <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
             <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#traversePostorder#0;class#Solution#0" expanded="false" />
             <element signature="method#rob#1;class#Solution#0" expanded="false" />
             <element signature="method#subRob#0;class#Solution#0" expanded="false" />
             <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
@@ -1098,7 +1148,7 @@
             <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
             <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
             <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
-            <element signature="e#66081#66138#0" expanded="false" />
+            <element signature="e#76148#76205#0" expanded="false" />
             <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
             <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
             <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
@@ -1119,11 +1169,11 @@
             <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
             <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
             <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
-            <element signature="class#81924:82310" expanded="false" />
-            <element signature="method#Num#0;class#81924:82310" expanded="false" />
+            <element signature="class#91991:92377" expanded="false" />
+            <element signature="method#Num#0;class#91991:92377" expanded="false" />
             <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
-            <element signature="e#84931#84945#0" expanded="false" />
-            <element signature="e#85733#85760#0" expanded="false" />
+            <element signature="e#94998#95012#0" expanded="false" />
+            <element signature="e#95800#95827#0" expanded="false" />
             <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
             <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
             <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
@@ -1157,13 +1207,32 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Tuple#0;class#Solution#0" expanded="false" />
+            <element signature="method#kthSmallest#0;class#Solution#0" expanded="false" />
+            <element signature="method#kthSmallestBinarySearch#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLongestSubstring2#0;class#Solution#0" expanded="false" />
+            <element signature="method#combinationSum4#0;class#Solution#0" expanded="false" />
+            <element signature="method#subCombinationSum4#0;class#Solution#0" expanded="false" />
+            <element signature="method#wiggleMaxLength#0;class#Solution#0" expanded="false" />
+            <element signature="method#getMoneyAmount#0;class#Solution#0" expanded="false" />
+            <element signature="method#kSmallestPairs#0;class#Solution#0" expanded="false" />
+            <element signature="method#getSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxResult#0;class#Solution#0" expanded="false" />
+            <element signature="method#firstGreaterOne#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxArea#0;class#Solution#0" expanded="false" />
+            <element signature="method#superPower#0;class#Solution#0" expanded="false" />
+            <element signature="method#subSuperPower#0;class#Solution#0" expanded="false" />
+            <element signature="method#powMod#0;class#Solution#0" expanded="false" />
             <element signature="method#largestDivisibleSubset#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPerfectSquare#0;class#Solution#0" expanded="false" />
             <element signature="method#countNumbersWithUniqueDigits#0;class#Solution#0" expanded="false" />
             <element signature="method#intersect#0;class#Solution#0" expanded="false" />
             <element signature="method#intersection#0;class#Solution#0" expanded="false" />
             <element signature="method#topKFrequent#0;class#Solution#0" expanded="false" />
             <element signature="method#myBinarySearch#0;class#Solution#0" expanded="false" />
             <element signature="method#reverseVowels#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseString#0;class#Solution#0" expanded="false" />
             <element signature="method#integerBreak#0;class#Solution#0" expanded="false" />
             <element signature="method#subIntegerBreak#0;class#Solution#0" expanded="false" />
             <element signature="method#countBits#0;class#Solution#0" expanded="false" />
@@ -1173,6 +1242,7 @@
             <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
             <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
             <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#traversePostorder#0;class#Solution#0" expanded="false" />
             <element signature="method#rob#1;class#Solution#0" expanded="false" />
             <element signature="method#subRob#0;class#Solution#0" expanded="false" />
             <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
@@ -1251,7 +1321,7 @@
             <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
             <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
             <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
-            <element signature="e#66081#66138#0" expanded="false" />
+            <element signature="e#76148#76205#0" expanded="false" />
             <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
             <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
             <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
@@ -1272,11 +1342,11 @@
             <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
             <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
             <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
-            <element signature="class#81924:82310" expanded="false" />
-            <element signature="method#Num#0;class#81924:82310" expanded="false" />
+            <element signature="class#91991:92377" expanded="false" />
+            <element signature="method#Num#0;class#91991:92377" expanded="false" />
             <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
-            <element signature="e#84931#84945#0" expanded="false" />
-            <element signature="e#85733#85760#0" expanded="false" />
+            <element signature="e#94998#95012#0" expanded="false" />
+            <element signature="e#95800#95827#0" expanded="false" />
             <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
             <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
             <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
@@ -1303,13 +1373,32 @@
           <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Tuple#0;class#Solution#0" expanded="false" />
+            <element signature="method#kthSmallest#0;class#Solution#0" expanded="false" />
+            <element signature="method#kthSmallestBinarySearch#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLongestSubstring2#0;class#Solution#0" expanded="false" />
+            <element signature="method#combinationSum4#0;class#Solution#0" expanded="false" />
+            <element signature="method#subCombinationSum4#0;class#Solution#0" expanded="false" />
+            <element signature="method#wiggleMaxLength#0;class#Solution#0" expanded="false" />
+            <element signature="method#getMoneyAmount#0;class#Solution#0" expanded="false" />
+            <element signature="method#kSmallestPairs#0;class#Solution#0" expanded="false" />
+            <element signature="method#getSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxResult#0;class#Solution#0" expanded="false" />
+            <element signature="method#firstGreaterOne#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxArea#0;class#Solution#0" expanded="false" />
+            <element signature="method#superPower#0;class#Solution#0" expanded="false" />
+            <element signature="method#subSuperPower#0;class#Solution#0" expanded="false" />
+            <element signature="method#powMod#0;class#Solution#0" expanded="false" />
             <element signature="method#largestDivisibleSubset#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPerfectSquare#0;class#Solution#0" expanded="false" />
             <element signature="method#countNumbersWithUniqueDigits#0;class#Solution#0" expanded="false" />
             <element signature="method#intersect#0;class#Solution#0" expanded="false" />
             <element signature="method#intersection#0;class#Solution#0" expanded="false" />
             <element signature="method#topKFrequent#0;class#Solution#0" expanded="false" />
             <element signature="method#myBinarySearch#0;class#Solution#0" expanded="false" />
             <element signature="method#reverseVowels#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseString#0;class#Solution#0" expanded="false" />
             <element signature="method#integerBreak#0;class#Solution#0" expanded="false" />
             <element signature="method#subIntegerBreak#0;class#Solution#0" expanded="false" />
             <element signature="method#countBits#0;class#Solution#0" expanded="false" />
@@ -1319,6 +1408,7 @@
             <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
             <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
             <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#traversePostorder#0;class#Solution#0" expanded="false" />
             <element signature="method#rob#1;class#Solution#0" expanded="false" />
             <element signature="method#subRob#0;class#Solution#0" expanded="false" />
             <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
@@ -1397,7 +1487,7 @@
             <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
             <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
             <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
-            <element signature="e#66081#66138#0" expanded="false" />
+            <element signature="e#76148#76205#0" expanded="false" />
             <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
             <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
             <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
@@ -1418,11 +1508,11 @@
             <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
             <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
             <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
-            <element signature="class#81924:82310" expanded="false" />
-            <element signature="method#Num#0;class#81924:82310" expanded="false" />
+            <element signature="class#91991:92377" expanded="false" />
+            <element signature="method#Num#0;class#91991:92377" expanded="false" />
             <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
-            <element signature="e#84931#84945#0" expanded="false" />
-            <element signature="e#85733#85760#0" expanded="false" />
+            <element signature="e#94998#95012#0" expanded="false" />
+            <element signature="e#95800#95827#0" expanded="false" />
             <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
             <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
             <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
@@ -1563,14 +1653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="585" column="13" selection-start-line="585" selection-start-column="13" selection-end-line="585" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1218">
@@ -1598,19 +1680,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/PriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="585" column="13" selection-start-line="585" selection-start-column="13" selection-end-line="585" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nick/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#Tuple#0;class#Solution#0" expanded="false" />
+            <element signature="method#kthSmallest#0;class#Solution#0" expanded="false" />
+            <element signature="method#kthSmallestBinarySearch#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLongestSubstring#0;class#Solution#0" expanded="false" />
+            <element signature="method#lengthOfLongestSubstring2#0;class#Solution#0" expanded="false" />
+            <element signature="method#combinationSum4#0;class#Solution#0" expanded="false" />
+            <element signature="method#subCombinationSum4#0;class#Solution#0" expanded="false" />
+            <element signature="method#wiggleMaxLength#0;class#Solution#0" expanded="false" />
+            <element signature="method#getMoneyAmount#0;class#Solution#0" expanded="false" />
+            <element signature="method#kSmallestPairs#0;class#Solution#0" expanded="false" />
+            <element signature="method#getSum#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxResult#0;class#Solution#0" expanded="false" />
+            <element signature="method#firstGreaterOne#0;class#Solution#0" expanded="false" />
+            <element signature="method#maxArea#0;class#Solution#0" expanded="false" />
+            <element signature="method#superPower#0;class#Solution#0" expanded="false" />
+            <element signature="method#subSuperPower#0;class#Solution#0" expanded="false" />
+            <element signature="method#powMod#0;class#Solution#0" expanded="false" />
             <element signature="method#largestDivisibleSubset#0;class#Solution#0" expanded="false" />
+            <element signature="method#isPerfectSquare#0;class#Solution#0" expanded="false" />
             <element signature="method#countNumbersWithUniqueDigits#0;class#Solution#0" expanded="false" />
             <element signature="method#intersect#0;class#Solution#0" expanded="false" />
             <element signature="method#intersection#0;class#Solution#0" expanded="false" />
             <element signature="method#topKFrequent#0;class#Solution#0" expanded="false" />
             <element signature="method#myBinarySearch#0;class#Solution#0" expanded="false" />
             <element signature="method#reverseVowels#0;class#Solution#0" expanded="false" />
+            <element signature="method#reverseString#0;class#Solution#0" expanded="false" />
             <element signature="method#integerBreak#0;class#Solution#0" expanded="false" />
             <element signature="method#subIntegerBreak#0;class#Solution#0" expanded="false" />
             <element signature="method#countBits#0;class#Solution#0" expanded="false" />
@@ -1620,6 +1729,7 @@
             <element signature="method#increasingTriplet#0;class#Solution#0" expanded="false" />
             <element signature="method#traversePreorder#0;class#Solution#0" expanded="false" />
             <element signature="method#traverseInorder#0;class#Solution#0" expanded="false" />
+            <element signature="method#traversePostorder#0;class#Solution#0" expanded="false" />
             <element signature="method#rob#1;class#Solution#0" expanded="false" />
             <element signature="method#subRob#0;class#Solution#0" expanded="false" />
             <element signature="method#permuteUnique#0;class#Solution#0" expanded="false" />
@@ -1698,7 +1808,7 @@
             <element signature="method#UnionFindSet#1;class#UnionFindSet#0;class#Solution#0" expanded="false" />
             <element signature="method#find#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
             <element signature="method#union#0;class#UnionFindSet#0;class#Solution#0" expanded="false" />
-            <element signature="e#66081#66138#0" expanded="false" />
+            <element signature="e#76148#76205#0" expanded="false" />
             <element signature="method#numIslands#0;class#Solution#0" expanded="false" />
             <element signature="method#titleToNumber#0;class#Solution#0" expanded="false" />
             <element signature="method#lowestCommonAncestorBST#0;class#Solution#0" expanded="false" />
@@ -1719,11 +1829,11 @@
             <element signature="method#bulbSwitch#0;class#Solution#0" expanded="false" />
             <element signature="method#maxProduct#0;class#Solution#0" expanded="false" />
             <element signature="method#nthSuperUglyNumber#0;class#Solution#0" expanded="false" />
-            <element signature="class#81924:82310" expanded="false" />
-            <element signature="method#Num#0;class#81924:82310" expanded="false" />
+            <element signature="class#91991:92377" expanded="false" />
+            <element signature="method#Num#0;class#91991:92377" expanded="false" />
             <element signature="method#findMinHeightTrees#0;class#Solution#0" expanded="false" />
-            <element signature="e#84931#84945#0" expanded="false" />
-            <element signature="e#85733#85760#0" expanded="false" />
+            <element signature="e#94998#95012#0" expanded="false" />
+            <element signature="e#95800#95827#0" expanded="false" />
             <element signature="method#findMinHeightTreesSlow#0;class#Solution#0" expanded="false" />
             <element signature="method#getTreeHeight#0;class#Solution#0" expanded="false" />
             <element signature="method#maxProfit#0;class#Solution#0" expanded="false" />
